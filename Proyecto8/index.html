@@ -65,6 +65,46 @@
         </div>
     </form>
 
+
+    <form action="index.html" name="formularioEditar" id="formularioEditar" method="get">
+        <div class="modal fade" id="editarTarea" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Agregar una nueva tarea</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="nombreEditar">Nombre:</label>
+                                <input type="text" name="nombreEditar" id="nombreEditar" class="form-control" required
+                                    placeholder="Ingresa un nombre de tarea">
+                            </div>
+                            <div class="col-12">
+                                <label for="fechaEditar">Fecha:</label>
+                                <input type="date" name="fechaEditar" id="fechaEditar" class="form-control" required
+                                    placeholder="Selecciona una fecha">
+                            </div>
+                            <div class="col-12">
+                                <label for="descripcionEditar">Descripción:</label>
+                                <textarea name="descripcionEditar" id="descripcionEditar" cols="30" rows="10" class="form-control"
+                                    required placeholder="Describe la tarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="hidden" name="idTarea" id="idTarea">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary" id="btnGuardarEditar">Editar tarea</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form> 
+
+
+
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
