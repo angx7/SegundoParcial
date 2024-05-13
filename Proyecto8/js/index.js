@@ -40,7 +40,7 @@ let mostrarTareas = () => {
             <strong>${tarea.descripcion}</strong>
             </div>
             <div class='col-3 border p-3 text-center'>
-                <video width="320" height="240" controls>
+                <video width="100%" height="100%" controls>
                     <source src="${tarea.video}" type="video/mp4">
                 </video>
             </div>
@@ -72,7 +72,6 @@ let AgregarDatos = () => {
         audio: audio.value,
         imagen: imagen.value
     };
-    console.log(datos);
     tareas.push(datos);
     mostrarTareas();
 
