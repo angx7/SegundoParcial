@@ -17,8 +17,8 @@ let tareas = [
         nombre: "Santiago",
         fecha: "2012-12-12",
         descripcion: "Saca a pasear al perro.",
-        video: "https://file-examples.com/storage/fe92070d83663e82d92ecf7/2017/04/file_example_MP4_480_1_5MG.mp4",
-        audio: "https://file-examples.com/storage/fe92070d83663e82d92ecf7/2017/11/file_example_MP3_700KB.mp3",
+        video: "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+        audio: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
         imagen: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThh2LejLzEkOiUBfH2iqWrzO4hG5pQIHsb3mzyOYNI_zh-bIXF"
     }
 ];
