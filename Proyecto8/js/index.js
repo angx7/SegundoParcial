@@ -72,6 +72,7 @@ let AgregarDatos = () => {
         audio: audio.value,
         imagen: imagen.value
     };
+    console.log(datos);
     tareas.push(datos);
     mostrarTareas();
 
