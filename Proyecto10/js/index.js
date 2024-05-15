@@ -17,7 +17,7 @@ let obtieneProductos = () => {
                         <img src="${producto.image}" class="card-img-top imagenProducto py-2" alt="...">
                         <div class="card-body">
                             <h5 class="card-title
-                            ">${producto.title}</h5>
+                            ">${producto.title.slice(0,25)}</h5>
                             <p class="card-text">${producto.description.slice(0,100)}</p>
                             <p class="card-text text-danger">$${producto.price}</p>
                             <a href="#" class="btn btn-primary">Comprar</a>
