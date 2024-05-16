@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Dela+Gothic+One&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+    <style>
+        .card-title {
+            font-size: 1.5em;
+            font-family: "Anta", sans-serif;
+        }
+
+        .card-text {
+            font-family: "PT Sans Narrow", sans-serif;
+            font-size: 1.2em;
+        }
+
+        /*** ESTILOS BOTÓN SLIDE RIGHT ***/
+        .ov-btn-slide-right {
+            background: #fff;
+            /* color de fondo */
+            color: #4741d7;
+            /* color de fuente */
+            border: 2px solid #4741d7;
+            /* tamaño y color de borde */
+            padding: 16px 20px;
+            border-radius: 3px;
+            /* redondear bordes */
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .ov-btn-slide-right:hover {
+            color: #fff;
+            /* color de fuente hover */
+        }
+
+        .ov-btn-slide-right::after {
+            content: "";
+            background: #4741d7;
+            /* color de fondo hover */
+            position: absolute;
+            z-index: -1;
+            padding: 16px 20px;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            right: -100%;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+
+        .ov-btn-slide-right:hover::after {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">OSCARS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExample">Mejores peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#actores">Mejores Actores</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Los_asesinos_de_la_luna.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Los_que_se_quedan.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container" id="actores">
+        <div class="row">
+            <div class="col-sm-4 mt-3">
+                <!-- Card 1 -->
+                <img src="images/actors/Bradley_Cooper.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bradley Cooper</h5>
+                    <p class="card-text">Bradley Charles Cooper es un actor, actor de voz, director, productor,
+                        guionista, cantante y compositor estadounidense. Inspirado por su padre, comenzó a interesarse
+                        por la actuación a temprana edad</p>
+                    <a href="https://es.wikipedia.org/wiki/Bradley_Cooper"
+                        class=" btn btn-primary m-3 ov-btn-slide-right center texto m-3 ov-btn-slide-right center texto"
+                        target="_blank">Más
+                        Información</a>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-3">
+                <!-- Card 2 -->
+                <img src="images/actors/Colman_Domingo.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Colman Domingo</h5>
+                    <p class="card-text">Colman Jason Domingo es un actor, director de escena y dramaturgo
+                        estadounidense, ​ más conocido por su papel de Victor Strand en la serie Fear The Walking Dead,
+                        de AMC.</p>
+                    <a href="https://es.wikipedia.org/wiki/Colman_Domingo"
+                        class=" btn btn-primary m-3 ov-btn-slide-right center texto" target="_blank">Más
+                        Información</a>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-3">
+                <!-- Card 3 -->
+                <img src="images/actors/Paul_Giamatti.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Paul Giamatti</h5>
+                    <p class="card-text">Paul Edward Valentine Giamatti es un actor y comediante estadounidense. Comenzó
+                        su carrera como actor secundario durante los años 1990 en producciones como Private Parts.</p>
+                    <a href="https://es.wikipedia.org/wiki/Paul_Giamatti"
+                        class=" btn btn-primary m-3 ov-btn-slide-right center texto" target="_blank">Más
+                        Información</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 mt-3">
+                <!-- Card 4 -->
+                <img src="images/actors/annette_bening.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Annette Bening</h5>
+                    <p class="card-text">Annette Carol Bening es una actriz estadounidense, nominada cuatro veces a los
+                        Premios Óscar, y ganadora de dos Globos de Oro, un Premio Bafta, y dos Premios del Sindicato de
+                        Actores.</p>
+                    <a href="https://es.wikipedia.org/wiki/Annette_Bening"
+                        class=" btn btn-primary m-3 ov-btn-slide-right center texto" target="_blank">Más
+                        Información</a>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-3">
+                <!-- Card 5 -->
+                <img src="images/actors/lily_gladstone.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lily Gladstone</h5>
+                    <p class="card-text">Lily Gladstone es una actriz estadounidense. Criado en la reserva Blackfeet en
+                        Browning, Montana y Seattle, Gladstone es de ascendencia Piegan Blackfeet, Nez Perce y europea.
+                        Gladstone ha aparecido en episodios de Room 104 de HBO y Reservation Dogs de FX. </p>
+                    <a href="https://es.wikipedia.org/wiki/Lily_Gladstone"
+                        class=" btn btn-primary m-3 ov-btn-slide-right center texto" target="_blank">Más
+                        Información</a>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-3">
+                <!-- Card 6 -->
+                <img src="images/actors/carey_mulligan.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Carey Mulligan</h5>
+                    <p class="card-text">Carey Hannah Mulligan es una actriz británica nominada, entre otros, a los
+                        Premios Óscar, SAG, Globo de Oro y BAFTA. Debutó en el cine interpretando a Kitty Bennet en
+                        Pride and Prejudice, adaptación de 2005 de la novela homónima de Jane Austen</p>
+                    <a href="https://es.wikipedia.org/wiki/Carey_Mulligan"
+                        class=" btn btn-primary m-3 ov-btn-slide-right center texto" target="_blank">Más
+                        Información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
