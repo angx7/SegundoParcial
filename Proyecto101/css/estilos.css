@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+
+.imagenProducto {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
